@@ -7,6 +7,7 @@
 // import PersonList from "./components/PersonList";
 // import Status from "./components/Status";
 
+import Counter from "./components/Counter";
 import User from "./components/User";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Input value={name} changeHandler={(e) => setName(e.target.value)} />
       <h2>{name}</h2> */}
       <User name="sumit" email="ss8559283@gmail.com" />
+      <Counter />
     </div>
   );
 }
