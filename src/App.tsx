@@ -1,5 +1,8 @@
 import { Greed } from "./components/Greed";
+import Layout from "./components/Layout";
+import Message from "./components/message";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const nameList = [
@@ -9,10 +12,19 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greed language="Typescript" viewer={20} logIn={true} />
+      <Greed language="Typescript"  logIn={true} />
       <br />
       <br />
       <PersonList nameList={nameList} />
+      <br />
+      <br />
+      <Status status="success" />
+      <br /><br />
+      <Layout>
+        <Message>
+          Children Component
+        </Message>
+      </Layout>
     </div>
   );
 }
