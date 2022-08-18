@@ -10,6 +10,7 @@
 import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
 import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/Toast";
 
 // import User from "./components/context/User";
 // import { UserContextProvider } from "./components/context/UserContext";
@@ -59,7 +60,8 @@ function App() {
       </UserContextProvider> */}
       {/* <DomRef /> */}
       {/* <MutableRef /> */}
-      <RandomNumber value={120} isPositive={true}  />
+      {/* <RandomNumber value={120} isPositive={true}  /> */}
+      <Toast position="center" />
     </div>
   );
 }
