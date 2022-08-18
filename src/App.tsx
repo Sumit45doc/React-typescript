@@ -7,8 +7,11 @@
 // import PersonList from "./components/PersonList";
 // import Status from "./components/Status";
 
-import User from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import DomRef from "./components/ref/DomRef";
+import MutableRef from "./components/ref/MutableRef";
+
+// import User from "./components/context/User";
+// import { UserContextProvider } from "./components/context/UserContext";
 // import Box from "./components/context/Box";
 // import { ThemeContextprovider } from "./components/context/ThemeContext";
 
@@ -50,9 +53,11 @@ function App() {
       {/* <ThemeContextprovider>
         <Box />
       </ThemeContextprovider> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+      <DomRef />
+      <MutableRef />
     </div>
   );
 }
