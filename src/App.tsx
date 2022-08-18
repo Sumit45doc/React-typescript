@@ -7,8 +7,10 @@
 // import PersonList from "./components/PersonList";
 // import Status from "./components/Status";
 
-import Box from "./components/context/Box";
-import { ThemeContextprovider } from "./components/context/ThemeContext";
+import User from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
+// import Box from "./components/context/Box";
+// import { ThemeContextprovider } from "./components/context/ThemeContext";
 
 // import Counter from "./components/Counter";
 // import User from "./components/User";
@@ -45,9 +47,12 @@ function App() {
       <h2>{name}</h2> */}
       {/* <User name="sumit" email="ss8559283@gmail.com" />
       <Counter /> */}
-      <ThemeContextprovider>
+      {/* <ThemeContextprovider>
         <Box />
-      </ThemeContextprovider>
+      </ThemeContextprovider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
