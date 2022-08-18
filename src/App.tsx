@@ -7,8 +7,11 @@
 // import PersonList from "./components/PersonList";
 // import Status from "./components/Status";
 
-import Counter from "./components/Counter";
-import User from "./components/User";
+import Box from "./components/context/Box";
+import { ThemeContextprovider } from "./components/context/ThemeContext";
+
+// import Counter from "./components/Counter";
+// import User from "./components/User";
 
 function App() {
   // const nameList = [
@@ -40,8 +43,11 @@ function App() {
       </div>
       <Input value={name} changeHandler={(e) => setName(e.target.value)} />
       <h2>{name}</h2> */}
-      <User name="sumit" email="ss8559283@gmail.com" />
-      <Counter />
+      {/* <User name="sumit" email="ss8559283@gmail.com" />
+      <Counter /> */}
+      <ThemeContextprovider>
+        <Box />
+      </ThemeContextprovider>
     </div>
   );
 }
