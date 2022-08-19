@@ -9,6 +9,7 @@
 
 import CustomButton from "./components/html/CustomButton";
 import Input from "./components/html/Input";
+import Text from "./components/polymorphic/Text";
 import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
 import RandomNumber from "./components/restriction/RandomNumber";
@@ -67,6 +68,9 @@ function App() {
       {/* <CustomButton variant="primary" onClick={() => console.log('clicked')}>
         butoon
       </CustomButton> */}
+      <Text size='lg' as={"h1"}>Heading</Text>
+      <Text size='md'>Paragraph</Text>
+      <Text size='sm' color="secondary" as="label">label</Text>
     </div>
   );
 }
