@@ -1,10 +1,11 @@
 type CustomButtonProps = {
-  variant: 'primary' | 'secondary'
-} & React.ComponentProps<'button'>
+  variant: 'primary' | 'secondary';
+  children: string
+} & Omit<React.ComponentProps<'button'>, 'children'>
 
-function CustomButton({variant, children, ...rest}: CustomButtonProps) {
+function CustomButton({ variant, children, ...rest }: CustomButtonProps) {
   return (
-    <button className={`class-with-${variant}`} >{children}</button>
+    <button className={`class-with-${variant}`} {...rest} >{children}</button>
   )
 }
 
