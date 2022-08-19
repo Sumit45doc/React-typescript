@@ -64,9 +64,9 @@ function App() {
       {/* <MutableRef /> */}
       {/* <RandomNumber value={120} isPositive={true}  /> */}
       {/* <Toast position="center" /> */}
-      <CustomButton variant="primary" onClick={() => console.log('clicked')}>
-        <div>button</div>
-      </CustomButton>
+      {/* <CustomButton variant="primary" onClick={() => console.log('clicked')}>
+        butoon
+      </CustomButton> */}
     </div>
   );
 }
