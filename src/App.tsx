@@ -7,6 +7,8 @@
 // import PersonList from "./components/PersonList";
 // import Status from "./components/Status";
 
+import CustomButton from "./components/html/CustomButton";
+import Input from "./components/html/Input";
 import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
 import RandomNumber from "./components/restriction/RandomNumber";
@@ -61,7 +63,10 @@ function App() {
       {/* <DomRef /> */}
       {/* <MutableRef /> */}
       {/* <RandomNumber value={120} isPositive={true}  /> */}
-      <Toast position="center" />
+      {/* <Toast position="center" /> */}
+      <CustomButton variant="primary" onClick={() => console.log('clicked')}>
+        asdads
+      </CustomButton>
     </div>
   );
 }
